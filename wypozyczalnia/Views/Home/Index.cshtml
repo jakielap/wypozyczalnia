@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Strona główna";
+}
+
+<div class="jumbotron">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Overlay -->
+        <div class="overlay"></div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Nowe samochody</h1>
+                        <h3>Poznaj naszą ofertę już dziś</h3>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button" itemref="index.cshtml">Szczegóły</button>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Atrakcyjne ceny</h1>
+                        <h3>Zniżki dla stałych klientów</h3>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button">Szczegóły</button>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Dodatkowe usługi</h1>
+                        <h3>Korzystaj z pełni możliwości</h3>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button">Szczegóły</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Samochody</h2>
+        <p>
+            Wypożycz samochód dla siebie.
+        </p>
+        <p><a class="btn btn-default">Przejdź &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Cennik</h2>
+        <p>Cennik opłat.</p>
+        <p><a class="btn btn-default">Przejdź &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Regulamin</h2>
+        <p>Warunki wynajmu.</p>
+        <p><a class="btn btn-default">Przejdź &raquo;</a></p>
+    </div>
+</div>
