@@ -20,9 +20,9 @@ namespace wypozyczalnia.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Auta()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Samochody dostępne w wypożyczalni.";
 
             return View();
         }
