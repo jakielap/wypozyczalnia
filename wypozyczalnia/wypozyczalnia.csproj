@@ -198,12 +198,28 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703132031248_InitMigration.cs" />
+    <Compile Include="Migrations\201703132031248_InitMigration.Designer.cs">
+      <DependentUpon>201703132031248_InitMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132045450_InitMigration1.cs" />
+    <Compile Include="Migrations\201703132045450_InitMigration1.Designer.cs">
+      <DependentUpon>201703132045450_InitMigration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703132139578_CarMigration.cs" />
+    <Compile Include="Migrations\201703132139578_CarMigration.Designer.cs">
+      <DependentUpon>201703132139578_CarMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\CarContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -271,8 +287,23 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Cars\Create.cshtml" />
+    <Content Include="Views\Cars\Delete.cshtml" />
+    <Content Include="Views\Cars\Details.cshtml" />
+    <Content Include="Views\Cars\Edit.cshtml" />
+    <Content Include="Views\Cars\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201703132031248_InitMigration.resx">
+      <DependentUpon>201703132031248_InitMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132045450_InitMigration1.resx">
+      <DependentUpon>201703132045450_InitMigration1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703132139578_CarMigration.resx">
+      <DependentUpon>201703132139578_CarMigration.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

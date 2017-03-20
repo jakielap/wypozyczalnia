@@ -80,3 +80,7 @@ c:\users\pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia
 c:\users\pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.csprojResolveAssemblyReference.cache
 c:\users\pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.dll
 c:\users\pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.pdb
+C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.Migrations.InitMigration.resources
+C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.csproj.GenerateResource.Cache
+C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.Migrations.InitMigration1.resources
+C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.Migrations.CarMigration.resources
