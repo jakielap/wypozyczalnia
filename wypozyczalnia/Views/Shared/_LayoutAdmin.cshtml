@@ -1,0 +1,36 @@
+﻿
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0, user-scalable: 0" />
+    <title>@ViewBag.Title - ZTI</title>
+    @Styles.Render("~/Content/dashboard.css")
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/general.js"></script>
+
+
+</head>
+<body>
+    <div id="header"> 
+        <div class="logo"><a href="../Home/Index">Rent<span> a </span>Car</a></div>
+    </div>
+    
+    <a class="mobile" href="#">MENU</a>
+
+    <div id="container">
+        <div class="sidebar">
+            <ul id="nav">
+                <li><a href="#">Użytkownicy</a></li>
+                <li><a href="#">Samochody</a></li>
+                <li><a href="#">Wypożyczenia</a></li>
+                <li><a href="#">Szukaj</a></li>
+                <li><a href="#">Inne</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            @RenderBody()
+            
+        </div>
+    </div>
+</body>
+</html>

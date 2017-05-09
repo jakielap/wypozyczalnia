@@ -84,3 +84,4 @@ C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia
 C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.csproj.GenerateResource.Cache
 C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.Migrations.InitMigration1.resources
 C:\Users\Pawel\documents\visual studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.Migrations.CarMigration.resources
+C:\Users\Pawel\Documents\Visual Studio 2015\Projects\wypozyczalnia\wypozyczalnia\obj\Debug\wypozyczalnia.Migrations.carphoto.resources

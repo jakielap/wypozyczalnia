@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using wypozyczalnia.Models;
+using System.IO;
 
 namespace wypozyczalnia.Controllers
 {
@@ -46,19 +47,28 @@ namespace wypozyczalnia.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Producer,Model,Year,EngineType,EngineCapacity,EnginePower,Occupied")] Car car)
+        [Authorize(Roles = "Admin")]
+        public ActionResult Create(HttpPostedFileBase file, [Bind(Include = "ID,Producer,Model,Year,EngineType,EngineCapacity,EnginePower,Occupied,Image")] Car car )
         {
             if (ModelState.IsValid)
             {
-                db.Cars.Add(car);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (file != null)
+                {
+                    var fileName = Path.GetFileName(file.FileName);
+                    var path = Path.Combine(Server.MapPath("~/Content/img/cars"), fileName);
+                    file.SaveAs(path);
+                    car.Image = Url.Content("~/Content/img/cars" + file);
+                    db.Cars.Add(car);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
             }
-
             return View(car);
+
         }
 
         // GET: Cars/Edit/5
+        [Authorize (Roles = "Admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -78,7 +88,8 @@ namespace wypozyczalnia.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Producer,Model,Year,EngineType,EngineCapacity,EnginePower,Occupied")] Car car)
+        [Authorize(Roles = "Admin")]
+        public ActionResult Edit([Bind(Include = "ID,Producer,Model,Year,EngineType,EngineCapacity,EnginePower,Occupied,Image")] Car car)
         {
             if (ModelState.IsValid)
             {
@@ -90,6 +101,7 @@ namespace wypozyczalnia.Controllers
         }
 
         // GET: Cars/Delete/5
+        [Authorize(Roles = "Admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -107,6 +119,7 @@ namespace wypozyczalnia.Controllers
         // POST: Cars/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult DeleteConfirmed(int id)
         {
             Car car = db.Cars.Find(id);

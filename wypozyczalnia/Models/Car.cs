@@ -15,5 +15,7 @@ namespace wypozyczalnia.Models
         public double EngineCapacity { get; set; }
         public int EnginePower { get; set; }
         public bool Occupied { get; set; }
+        public string Image { get; set; }
+
     }
 }

@@ -20,6 +20,7 @@ namespace wypozyczalnia.Controllers
             return View();
         }
 
+        
         public ActionResult Auta()
         {
             ViewBag.Message = "Samochody dostępne w wypożyczalni.";
